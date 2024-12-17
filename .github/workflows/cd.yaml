@@ -39,7 +39,7 @@ jobs:
         git config --local user.name "Github Action"
         git commit -am "Bump docker version"
     
-    -name: Push
+    - name: Push
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN_GITHUB }}
