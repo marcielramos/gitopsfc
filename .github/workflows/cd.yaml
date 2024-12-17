@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2    
 
-    - name: Use secret in script
+    - name: Use secret in script 
       run: echo "O segredo é ${{ secrets.SECRET_GITOPS }}"      
     - name: Use secret in script
       run: echo "O segredo é ${{ secrets.DOCKER_USERNAME }}"      
