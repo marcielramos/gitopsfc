@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent/-/raw/master/pkg/agentcfg/agentcfg_schemas/ConfigurationFile.json": "file:///home/marcielramos/Projetos/Gitops/k8s/deployment.yaml"
+    }
+}
