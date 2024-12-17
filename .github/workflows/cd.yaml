@@ -22,16 +22,16 @@ jobs:
         tags: ${{ github.sha }}, latest
 
     - name: Setup Kustomize
-      uses: imranismail/setup-kustomize@v1
+      uses: imranismail/setup-kustomize@v2
       with:
-        kustomize-version: "3.6.1"
+        kustomize-version: "*"
 
     - name: Update Kubernetes resources
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       run: |
         cd k8s
-        Kustomize edit set image goserver=$DOCKER_USERNAME/gitopsfc:@GITHUB_SHA
+        kustomize edit set image goserver=$DOCKER_USERNAME/gitopsfc:@GITHUB_SHA
 
     - name: Commit
       run: |
