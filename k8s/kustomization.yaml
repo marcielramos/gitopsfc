@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: marcielramos/gitopsfc
-  newTag: 6bff30e8c41a26b0f7643020247fc914879f5b0c
+  newTag: 40eee9f2656f242c1f3996c50ce82520244a1519
